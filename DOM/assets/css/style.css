@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --grey1: rgb(65, 62, 62);
+    --grey2: rgba(65, 62, 62, 0.9);
+    --grey3: rgb(180, 180, 180);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .8s;
+}
+
+body.dark-mode {
+    background-color: var(--black);
+}
+
+.all-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.all-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-mode {
+    color: var(--grey2);
+    font: normal 2em Arial;
+}
+
+h1.dark-mode {
+    color: var(--white);
+}
+
+.action-btn {
+    margin-top: 10px;
+    padding: 12px 40px;
+    background-color: var(--grey2);
+    color: var(--white);
+    border-radius: 19px;
+    border: none;
+    box-shadow: none;
+    font: bold 1em Arial;
+    cursor: pointer;
+    transition: .8s;
+    outline: none;
+}
+
+.action-btn:hover {
+    background-color: var(--black);
+}
+
+button.dark-mode {
+    background-color: var(--white);
+    color: var(--grey1);
+}
+
+button.dark-mode:hover {
+    background-color: var(--grey1);
+    color: var(--white);
+}
+
+.footer {
+    flex: 1;
+    max-height: 50px;
+    background-color: var(--grey2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    transition: .8s;
+    font-weight: bold;
+}
+
+footer.dark-mode {
+    background-color: var(--grey3);
+    color: var(--grey1);
+}
+
+.footer > p{
+    max-width: 500px;
+    font-size: .9em;
+}
