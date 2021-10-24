@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --bg: #ffffff;
+    --bgCat: #ff8f33;
+    --txColor: #ffa153;
+
+    /* fonts */
+    --cat: 'Rubik Beastly', cursive;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container{
+    max-width: 600px;
+    width: 100%;
+}
+
+#main-container > h1 {
+    text-align: center;
+    font: 2.5em var(--cat);
+    color: var(--txColor);
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.233);
+}
+
+#cat-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.514);
+    background-color: var(--bgCat);
+    padding: 5px;
+}
+
+#cat-container > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cat-btn {
+    display: block;
+    background-color: var(--bgCat);
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2em;
+    margin: 10px auto;
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.226);
+    transition: .8s;
+}
+
+.cat-btn:hover {
+    background-color: #c45b05;
+}
