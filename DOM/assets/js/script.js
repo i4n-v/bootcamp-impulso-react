@@ -1,4 +1,4 @@
-const setDarkMode = element => element.classList.add('dark-mode');
+'const setDarkMode = element => element.classList.add('dark-mode');
 const removeDarkMode = element => element.classList.remove('dark-mode');
 const getBody = () => document.querySelector('body');
 const getFooter = () => document.querySelector('.footer');
